@@ -1,0 +1,9 @@
+# مثال لتنفيذ الدمج باستخدام صائد الإكسيل
+input_folder = "C:/path/to/excel_files"      # مسار المجلد الذي يحتوي على الملفات
+output_file = "C:/path/to/master_file.xlsx"  # مسار الملف النهائي المدمج
+
+# يمكنكِ أيضاً تحديد أعمدة للفلترة ومنع التكرار (مثل الكود أو التاريخ)
+merge_columns = ['الكود', 'التاريخ']
+
+# استدعاء دالة الدمج
+smart_excel_hunter_with_conditions(input_folder, output_file, merge_columns)
